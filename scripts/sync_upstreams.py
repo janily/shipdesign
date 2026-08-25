@@ -49,8 +49,48 @@ def copy_mapping(repo_dir: Path, mapping: dict) -> None:
         raise FileNotFoundError(f"synced skill missing SKILL.md: {destination}")
 
 
+def previous_managed_state() -> tuple[set[str], set[str]]:
+    if not LOCK.exists():
+        return set(), set()
+    previous = json.loads(LOCK.read_text())
+    destinations = {
+        mapping["destination"]
+        for source in previous.get("sources", [])
+        for mapping in source.get("mappings", [])
+    }
+    source_ids = {source["id"] for source in previous.get("sources", [])}
+    return destinations, source_ids
+
+
+def remove_stale_managed_files(
+    previous_destinations: set[str],
+    previous_source_ids: set[str],
+    current_destinations: set[str],
+    current_source_ids: set[str],
+) -> None:
+    for destination in sorted(previous_destinations - current_destinations):
+        path = SKILLS / destination
+        if path.exists():
+            shutil.rmtree(path)
+            print(f"removed stale skill: {destination}")
+
+    for source_id in sorted(previous_source_ids - current_source_ids):
+        path = LICENSES / f"{source_id}.LICENSE"
+        if path.exists():
+            path.unlink()
+            print(f"removed stale license: {path.name}")
+
+
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text())
+    previous_destinations, previous_source_ids = previous_managed_state()
+    current_destinations = {
+        mapping["destination"]
+        for source in manifest["sources"]
+        for mapping in source["mappings"]
+    }
+    current_source_ids = {source["id"] for source in manifest["sources"]}
+
     SKILLS.mkdir(exist_ok=True)
     LICENSES.mkdir(exist_ok=True)
     lock_sources = []
@@ -83,6 +123,15 @@ def main() -> None:
                 "mappings": source["mappings"],
             })
             print(f"synced {source['id']} @ {commit[:12]}")
+
+    # Only remove files that were managed by the previous lock, and only after
+    # every current upstream finished syncing successfully.
+    remove_stale_managed_files(
+        previous_destinations,
+        previous_source_ids,
+        current_destinations,
+        current_source_ids,
+    )
 
     LOCK.write_text(json.dumps({
         "version": 1,
