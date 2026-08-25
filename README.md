@@ -12,7 +12,17 @@ The goal is not “more animation” or “make it look premium.” The goal is 
 
 ## What is bundled
 
-ShipDesign synchronizes specialist skills from Tastemaker, Garden Web Design Engineer, Elaya Landing Page Design, Emil Kowalski, Meng To, Jakub Krehel, plus a transparent UX-psychology substitute for the tutorial's unverified “Perception Laws” label. See `CREDITS.md` and `UPSTREAM_LOCK.json` for provenance.
+ShipDesign synchronizes specialist skills from exactly seven verified upstream repositories:
+
+1. `codeswithroh/tastemaker`
+2. `ConardLi/garden-skills`
+3. `elayadesign/ai-design-skills`
+4. `emilkowalski/skills`
+5. `MengTo/Skills`
+6. `jakubkrehel/skills`
+7. `Owl-Listener/designer-skills`
+
+The seventh source supplies the perception layer: visual hierarchy, Gestalt grouping laws, intentional distinctiveness, and rendered-screen visual critique. See `CREDITS.md` and `UPSTREAM_LOCK.json` for provenance and exact pinned commits.
 
 ## Install
 
@@ -52,6 +62,18 @@ Install `*`, not only `shipdesign`: the orchestrator reads sibling specialist sk
 
 ShipDesign will classify the surface, inspect evidence, choose a coherent direction, build, apply motion only when justified, review the rendered interface, and refine until the quality gate passes or three refinement loops expose a real blocker.
 
+## Capability map
+
+```text
+Reference / taste        → Tastemaker
+Direction / system       → Garden Web Design Engineer
+Landing / conversion     → Elaya Landing Page Design
+Component / micro-motion → Emil Kowalski
+Cinematic / scroll       → Meng To
+UI refinement / QA       → Jakub Krehel
+Perception / critique    → Owl-Listener Designer Skills
+```
+
 ## Quality gate
 
 100-point shared rubric:
@@ -69,6 +91,8 @@ Pass: **>= 90/100 and zero Critical findings**.
 ## Upstream sync
 
 `upstreams.json` is the source of truth. GitHub Actions refreshes mirrored skill folders weekly and records exact commits in `UPSTREAM_LOCK.json`. Every upstream is MIT licensed and its license text is preserved under `licenses/`.
+
+The sync process also removes mirrors that were managed by the previous lock but are no longer declared in the manifest, preventing retired specialist skills from remaining installed accidentally.
 
 Manual sync:
 
