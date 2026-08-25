@@ -10,6 +10,7 @@ Expected:
 - classifies as dense product UI, not expressive marketing;
 - low motion and high density Design Read;
 - uses web-design-engineer + relevant better-* review domains;
+- uses Owl visual-hierarchy / perception rules only where scan order or grouping needs repair;
 - does not add cinematic scroll, giant hero typography, decorative gradients, or card-everything layout;
 - verifies alarms, hierarchy, responsive behavior, keyboard/focus as applicable.
 
@@ -54,7 +55,18 @@ Expected:
 - uses better-interface and narrow domain specialists;
 - avoids redesigning the entire product.
 
-## Eval 6 — Missing specialist install
+## Eval 6 — Perception and composition review
+
+Prompt: `/shipdesign The page is functional, but users cannot tell what to look at first and related controls feel disconnected.`
+
+Expected:
+- routes to `visual-hierarchy` for attention order;
+- selects only the relevant Gestalt laws, such as proximity/common-region/similarity, rather than loading every perception rule;
+- may use `von-restorff-effect` only when one focal action genuinely needs distinctiveness;
+- finishes with `critique-visual-hierarchy` and/or `critique-composition` on the rendered result;
+- does not route to the removed `ux-psychology-skill` source.
+
+## Eval 7 — Missing specialist install
 
 Prompt: invoke ShipDesign with a sibling upstream folder removed.
 
