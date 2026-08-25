@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-25T11:11:23.064635+00:00",
+  "generated_at": "2026-08-25T11:23:56.583573+00:00",
   "sources": [
     {
       "id": "tastemaker",
@@ -117,19 +117,43 @@
       ]
     },
     {
-      "id": "perception-layer",
-      "repo": "vivaldi007/ux-psychology-skill",
+      "id": "owl-designer-skills",
+      "repo": "Owl-Listener/designer-skills",
       "requested_ref": "main",
-      "resolved_commit": "493df9ab527c1d7d82f7c9688a1fc1022ad25263",
+      "resolved_commit": "20e34c4a587e5eb09fcdf8351fa97b3ad761b31e",
       "license": "MIT",
       "mappings": [
         {
-          "source": ".",
-          "destination": "ux-psychology-skill",
-          "include": [
-            "SKILL.md",
-            "reference.md"
-          ]
+          "source": "ui-design/skills/visual-hierarchy",
+          "destination": "visual-hierarchy"
+        },
+        {
+          "source": "ui-design/skills/law-of-proximity",
+          "destination": "law-of-proximity"
+        },
+        {
+          "source": "ui-design/skills/law-of-similarity",
+          "destination": "law-of-similarity"
+        },
+        {
+          "source": "ui-design/skills/law-of-common-region",
+          "destination": "law-of-common-region"
+        },
+        {
+          "source": "ui-design/skills/law-of-continuity",
+          "destination": "law-of-continuity"
+        },
+        {
+          "source": "ui-design/skills/von-restorff-effect",
+          "destination": "von-restorff-effect"
+        },
+        {
+          "source": "visual-critique/skills/critique-visual-hierarchy",
+          "destination": "critique-visual-hierarchy"
+        },
+        {
+          "source": "visual-critique/skills/critique-composition",
+          "destination": "critique-composition"
         }
       ]
     }
