@@ -9,6 +9,16 @@ ShipDesign uses exact or intentionally scoped mirrors of independent upstream de
 - Specialist instructions remain authoritative inside their owned domain; ShipDesign only decides when to load them, how to sequence them, and whether the final result passes the shared quality gate.
 - If an upstream instruction conflicts with an explicit user constraint or repository convention, the user/repository constraint wins and the deviation should be stated.
 
-## Important provenance note
+## Verified source set
 
-The tutorial label “Perception Laws” could not be matched to a verifiable same-name upstream repository during the initial ShipDesign build. The current perception layer therefore uses the clearly attributed MIT-licensed `vivaldi007/ux-psychology-skill` as a transparent substitute for Gestalt, attention, interaction-law, cognitive-load, and trust checks. Do not describe it as the tutorial's original Perception Laws skill.
+ShipDesign's upstream bundle is intentionally limited to these seven repositories:
+
+1. `codeswithroh/tastemaker`
+2. `ConardLi/garden-skills`
+3. `elayadesign/ai-design-skills`
+4. `emilkowalski/skills`
+5. `MengTo/Skills`
+6. `jakubkrehel/skills`
+7. `Owl-Listener/designer-skills`
+
+The perception / visual-critique layer comes from the verified MIT-licensed `Owl-Listener/designer-skills` repository. ShipDesign mirrors only the specific Gestalt, visual-hierarchy, and critique skills declared in `upstreams.json`; it does not mirror the entire 100+ skill collection.
