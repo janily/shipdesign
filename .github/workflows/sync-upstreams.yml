@@ -31,7 +31,7 @@ jobs:
         run: python scripts/verify_bundle.py
       - name: Commit synchronized mirrors
         run: |
-          if git diff --quiet; then
+          if [[ -z "$(git status --porcelain -- skills licenses UPSTREAM_LOCK.json)" ]]; then
             echo "No upstream changes"
             exit 0
           fi
