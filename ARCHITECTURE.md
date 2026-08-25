@@ -23,7 +23,7 @@ ShipDesign separates **specialist design knowledge** from **workflow orchestrati
      MOTION ------- Animate / Awwwards / Scroll Storytelling
         |
         v
-     REVIEW ------- Better Interface / UX Psychology
+     REVIEW ------- Better Interface / Owl Perception + Visual Critique
         |
         v
  QUALITY GATE ---- >= 90, Critical = 0
@@ -33,6 +33,20 @@ ShipDesign separates **specialist design knowledge** from **workflow orchestrati
         +------------------------+
 ```
 
+## Seven upstream capability groups
+
+```text
+Reference / taste        → codeswithroh/tastemaker
+Direction / system       → ConardLi/garden-skills
+Landing / conversion     → elayadesign/ai-design-skills
+Component / micro-motion → emilkowalski/skills
+Cinematic / scroll       → MengTo/Skills
+UI refinement / QA       → jakubkrehel/skills
+Perception / critique    → Owl-Listener/designer-skills
+```
+
+The Owl source is intentionally scoped to the perception and visual-critique skills declared in `upstreams.json`; ShipDesign does not mirror the entire designer-skills repository.
+
 ## Ownership
 
 - `skills/shipdesign/`: ShipDesign-owned orchestration.
@@ -40,7 +54,7 @@ ShipDesign separates **specialist design knowledge** from **workflow orchestrati
 - `upstreams.json`: source-of-truth mapping.
 - `UPSTREAM_LOCK.json`: generated exact commit pins.
 - `licenses/`: preserved upstream license texts.
-- `scripts/sync_upstreams.py`: mirror mechanism.
+- `scripts/sync_upstreams.py`: mirror mechanism and stale-managed-file cleanup.
 - `scripts/verify_bundle.py`: structural gate.
 
 ## Why not nested slash commands?
