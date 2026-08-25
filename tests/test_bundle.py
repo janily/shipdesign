@@ -86,6 +86,10 @@ def test_manifest_has_expected_upstream_skills():
     assert "ux-psychology-skill" not in destinations
 
 
+def test_legacy_psychology_mirror_is_removed():
+    assert not (ROOT / "skills/ux-psychology-skill").exists()
+
+
 def test_shipdesign_frontmatter_and_refs():
     text = (ROOT / "skills/shipdesign/SKILL.md").read_text()
     assert text.startswith("---\nname: shipdesign\n")
