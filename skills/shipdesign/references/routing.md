@@ -13,7 +13,10 @@ Use the smallest specialist set that covers the current surface. Read source fil
 | Premium expressive marketing site | `../build-awwwards-quality-sites/SKILL.md` | Awwwards-grade composition and visual craft |
 | Scroll itself carries the story | `../cinematic-scroll-storytelling/SKILL.md` | Scroll narrative and cinematic sequencing |
 | Final holistic interface review | `../better-interface/SKILL.md` | Coordinate specialist review domains |
-| Perception, cognitive load, trust, conversion behavior | `../ux-psychology-skill/SKILL.md` | Gestalt/attention/interaction-law audit with ethical guardrails |
+| Visual hierarchy needs to be designed or repaired | `../visual-hierarchy/SKILL.md` | Establish attention order, emphasis, scan path, and focal priority |
+| Grouping/relationship is ambiguous | `../law-of-proximity/SKILL.md`, `../law-of-similarity/SKILL.md`, `../law-of-common-region/SKILL.md`, `../law-of-continuity/SKILL.md` | Apply perceptual grouping laws rather than arbitrary spacing or decoration |
+| One important action or object must stand out | `../von-restorff-effect/SKILL.md` | Use deliberate visual distinctiveness without creating competing focal points |
+| Final perception/composition audit | `../critique-visual-hierarchy/SKILL.md`, `../critique-composition/SKILL.md` | Critique attention flow, balance, grouping, composition, and visual clarity |
 
 ## Better-interface domain handoffs
 
@@ -25,6 +28,19 @@ When the holistic review exposes a domain problem, read the owning source rather
 - accessibility/keyboard/semantics → `../better-accessibility/SKILL.md`
 - visual polish/motion aesthetics → `../better-ui/SKILL.md`
 - interface copy → `../better-writing/SKILL.md`
+
+## Perception review handoffs
+
+Use Owl-Listener's perception skills as targeted design laws, not as a reason to load every law on every screen:
+
+- attention order / focal point → `../visual-hierarchy/SKILL.md`
+- spatial grouping → `../law-of-proximity/SKILL.md`
+- repeated visual language → `../law-of-similarity/SKILL.md`
+- boundary/group containment → `../law-of-common-region/SKILL.md`
+- directional flow / scan continuity → `../law-of-continuity/SKILL.md`
+- intentional standout element → `../von-restorff-effect/SKILL.md`
+- rendered-screen hierarchy audit → `../critique-visual-hierarchy/SKILL.md`
+- rendered-screen composition audit → `../critique-composition/SKILL.md`
 
 ## Design Read defaults
 
