@@ -106,6 +106,7 @@ def test_orchestrator_names_all_quality_layers():
         assert token in text
 
 
-def test_sync_workflow_commits_untracked_mirrors():
+def test_sync_workflow_commits_untracked_mirrors_and_rebases_before_push():
     workflow = (ROOT / ".github/workflows/sync-upstreams.yml").read_text()
     assert "git status --porcelain" in workflow
+    assert "git pull --rebase origin main" in workflow
