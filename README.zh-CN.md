@@ -53,12 +53,12 @@ npx skills@latest add janily/shipdesign --skill '*' -a claude-code --copy -y
 3. Direction：Design Read + 视觉方向 + 设计系统锁定。
 4. Build：结构、组件、状态、响应式、真实内容。
 5. Motion：微交互、反馈；只有合适的页面才启用滚动叙事。
-6. Review：布局、排版、颜色、组件、动效、Accessibility、Responsive、认知与原创度。
+6. Review：布局、排版、颜色、组件、动效、Accessibility、Responsive、感知层级与原创度。
 7. Quality Gate：低于 90 分或存在 Critical 问题就继续修，最多 3 轮。
 
 ## 上游 Skills
 
-当前验证并集成的来源包括：
+ShipDesign 当前只认这 7 个经过确认的上游仓库：
 
 - `codeswithroh/tastemaker`
 - `ConardLi/garden-skills`
@@ -66,9 +66,23 @@ npx skills@latest add janily/shipdesign --skill '*' -a claude-code --copy -y
 - `emilkowalski/skills`
 - `MengTo/Skills`
 - `jakubkrehel/skills`
-- `vivaldi007/ux-psychology-skill`
+- `Owl-Listener/designer-skills`
 
-需要特别说明：视频中的 **Perception Laws** 暂时没有找到可验证的同名原始仓库，因此当前使用 `ux-psychology-skill` 作为明确标注的认知/感知层替代，不冒充原作者。详细来源见 `CREDITS.md`。
+对应能力关系：
+
+```text
+参考 / 品味提取       → Tastemaker
+设计方向 / 系统       → Garden Web Design Engineer
+Landing / 转化        → Elaya Landing Page Design
+组件 / 微交互         → Emil Kowalski
+电影感 / 滚动叙事     → Meng To
+UI 精修 / QA          → Jakub Krehel
+感知法则 / 视觉审查   → Owl-Listener Designer Skills
+```
+
+`Owl-Listener/designer-skills` 提供视觉层级、Gestalt 分组法则、Von Restorff 效应以及视觉层级/构图审查。之前临时使用的 `vivaldi007/ux-psychology-skill` 已从 ShipDesign 上游集合中移除。
+
+详细来源和 License 见 `CREDITS.md`，每次同步后的精确 commit 见 `UPSTREAM_LOCK.json`。
 
 ## 设计原则
 
