@@ -69,7 +69,7 @@
 
 ### Task 5: Verify and publish
 
-- [ ] Run `python -m pytest -q tests/test_bundle.py` and confirm green.
-- [ ] Push owned files to `main`.
-- [ ] Wait for sync workflow to mirror upstream skills and write `UPSTREAM_LOCK.json`.
-- [ ] Run/inspect final bundle verification and confirm synchronized skills are present.
+- [x] Run `python -m pytest -q tests/test_bundle.py` and confirm green.
+- [x] Push owned files to `main`.
+- [x] Wait for sync workflow to mirror upstream skills and write `UPSTREAM_LOCK.json`.
+- [x] Run/inspect final bundle verification and confirm synchronized skills are present.
