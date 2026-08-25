@@ -71,3 +71,8 @@ def test_orchestrator_names_all_quality_layers():
     text = (ROOT / "skills/shipdesign/SKILL.md").read_text().lower()
     for token in ["evidence", "direction", "build", "motion", "review", "quality gate"]:
         assert token in text
+
+
+def test_sync_workflow_commits_untracked_mirrors():
+    workflow = (ROOT / ".github/workflows/sync-upstreams.yml").read_text()
+    assert "git status --porcelain" in workflow
