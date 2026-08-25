@@ -22,6 +22,16 @@ REQUIRED_OWNED = [
     "tests/skill-evals.md",
 ]
 
+EXPECTED_UPSTREAM_REPOS = {
+    "codeswithroh/tastemaker",
+    "ConardLi/garden-skills",
+    "elayadesign/ai-design-skills",
+    "emilkowalski/skills",
+    "MengTo/Skills",
+    "jakubkrehel/skills",
+    "Owl-Listener/designer-skills",
+}
+
 EXPECTED_DESTINATIONS = {
     "tastemaker",
     "web-design-engineer",
@@ -38,8 +48,19 @@ EXPECTED_DESTINATIONS = {
     "better-accessibility",
     "better-layout",
     "better-writing",
-    "ux-psychology-skill",
+    "visual-hierarchy",
+    "law-of-proximity",
+    "law-of-similarity",
+    "law-of-common-region",
+    "law-of-continuity",
+    "von-restorff-effect",
+    "critique-visual-hierarchy",
+    "critique-composition",
 }
+
+
+def load_manifest():
+    return json.loads((ROOT / "upstreams.json").read_text())
 
 
 def test_owned_files_exist():
@@ -47,14 +68,22 @@ def test_owned_files_exist():
     assert not missing, f"missing owned files: {missing}"
 
 
+def test_manifest_uses_exactly_the_seven_verified_upstreams():
+    manifest = load_manifest()
+    repos = {source["repo"] for source in manifest["sources"]}
+    assert repos == EXPECTED_UPSTREAM_REPOS
+    assert "vivaldi007/ux-psychology-skill" not in repos
+
+
 def test_manifest_has_expected_upstream_skills():
-    manifest = json.loads((ROOT / "upstreams.json").read_text())
+    manifest = load_manifest()
     destinations = {
         mapping["destination"]
         for source in manifest["sources"]
         for mapping in source["mappings"]
     }
     assert destinations == EXPECTED_DESTINATIONS
+    assert "ux-psychology-skill" not in destinations
 
 
 def test_shipdesign_frontmatter_and_refs():
