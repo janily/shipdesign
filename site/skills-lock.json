@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "skills": {
+    "animate": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/animate/SKILL.md",
+      "computedHash": "6e463bf11705d1929a4a398b108dfdd1e099bd9cbf4cfe031da08df97b929e37"
+    },
+    "better-accessibility": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-accessibility/SKILL.md",
+      "computedHash": "501d84d8077a1b3c201f11a15901a9de5b1bff3536e98ca23b5e7cfb372f5ce3"
+    },
+    "better-colors": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-colors/SKILL.md",
+      "computedHash": "290e10e73c835cd21d016b60e16a6bb0562040903b9e56d15ad25ebb5e9cc762"
+    },
+    "better-interface": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-interface/SKILL.md",
+      "computedHash": "84b67f6b6c06337d47a56cfae89fd90eb893e04c14d60f9b3eeaca2804b86351"
+    },
+    "better-layout": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-layout/SKILL.md",
+      "computedHash": "4d38dfb87825bba2d8359759a3cb25b3da065f7bd8ff41cf72b9936f83c82903"
+    },
+    "better-typography": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-typography/SKILL.md",
+      "computedHash": "0cd871f48bb1a411e0724b48226c69bb768f1c903930ae6d333e234d46f0a9d2"
+    },
+    "better-ui": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-ui/SKILL.md",
+      "computedHash": "703f24c7577f514d37f773c1b32b75cda53b98603f8ba841e9d57bacfa5b83cd"
+    },
+    "better-writing": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/better-writing/SKILL.md",
+      "computedHash": "76d1a669e9f0e8fe08973fcb06676e6dcedeedbfd99e6cb75d41451405725b01"
+    },
+    "build-awwwards-quality-sites": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/build-awwwards-quality-sites/SKILL.md",
+      "computedHash": "5a1bb2b382c617361c7984c036a834b4153f9160bcb84fa189d005a9e192a2ac"
+    },
+    "cinematic-scroll-storytelling": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/cinematic-scroll-storytelling/SKILL.md",
+      "computedHash": "d05b2a9b0e1bd0ac139126aa90122947b8c1fa8665fb7faf9fb19349f741f353"
+    },
+    "critique-composition": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/critique-composition/SKILL.md",
+      "computedHash": "951150a2bfd920c34b4f266c803535879e64e360d6eab58684e5e1e669d92956"
+    },
+    "critique-visual-hierarchy": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/critique-visual-hierarchy/SKILL.md",
+      "computedHash": "87835662a548fe96f25fb950dda6673409a3fa2eb2372537d59b4f8339eaaaf9"
+    },
+    "emil-design-eng": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/emil-design-eng/SKILL.md",
+      "computedHash": "87067d79205fdedc6d682891027dd9c7335486c4b4dc2e785638941a9d2e6061"
+    },
+    "landing-page-design": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/landing-page-design/SKILL.md",
+      "computedHash": "45a4ccd7cd4a374d973207a8ae9afc26cbbfc699f59c93f6700f3b944d276bec"
+    },
+    "law-of-common-region": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/law-of-common-region/SKILL.md",
+      "computedHash": "07ad08239df0b93a4f0c79698ce97de244331b4010ece299ebe50b8171dbf23a"
+    },
+    "law-of-continuity": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/law-of-continuity/SKILL.md",
+      "computedHash": "2e6c9fb8df4a1641a91ad237f9bacb94d88307b53d7a8f2642889c7a49e9e664"
+    },
+    "law-of-proximity": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/law-of-proximity/SKILL.md",
+      "computedHash": "5a01709e3ccf308f61aa77c5b1914c9ce340019d2f83cedba6629b274cab283e"
+    },
+    "law-of-similarity": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/law-of-similarity/SKILL.md",
+      "computedHash": "686096055b3920cba66e4c26fc27af919e633088ec6488f1461b3b7d7c92efb8"
+    },
+    "shipdesign": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/shipdesign/SKILL.md",
+      "computedHash": "aa12d03d4194f97b6d4892102b22d382aa6f3fa5324ca10efd4c9bfaf274aea9"
+    },
+    "tastemaker": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/tastemaker/SKILL.md",
+      "computedHash": "781c9afd9a2874d530200088a22eb5d1c0394ad55b14eb78d6603caf35409975"
+    },
+    "video-to-superprompt": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/video-to-superprompt/SKILL.md",
+      "computedHash": "97c4e32537f1d73f2129b2cb8625b4281edffa028635ba715bb9f4768a3d60a7"
+    },
+    "visual-hierarchy": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/visual-hierarchy/SKILL.md",
+      "computedHash": "02f1bd148db68eb4455332a3d00e77fc8111c151eee3b22df5bffc7815fc1fb5"
+    },
+    "von-restorff-effect": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/von-restorff-effect/SKILL.md",
+      "computedHash": "093eddd3937a6d4650875f26398ebd67a31626bbd52365b2065cb4657207ad9d"
+    },
+    "web-design-engineer": {
+      "source": "janily/shipdesign",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-engineer/SKILL.md",
+      "computedHash": "419833614b24848c7c93bb2118e135a7e7b8267e53a25b0373eb4d1c49e71547"
+    }
+  }
+}
