@@ -142,3 +142,20 @@ def test_sync_workflow_commits_untracked_mirrors_and_rebases_before_push():
     workflow = (ROOT / ".github/workflows/sync-upstreams.yml").read_text()
     assert "git status --porcelain" in workflow
     assert "git pull --rebase origin main" in workflow
+
+
+def test_site_does_not_vendor_installed_skills():
+    site = ROOT / "site"
+    forbidden_skill_roots = [
+        site / ".agents/skills",
+        site / ".claude/skills",
+        site / ".cursor/skills",
+    ]
+    present = [p.relative_to(ROOT).as_posix() for p in forbidden_skill_roots if p.exists()]
+    assert not present, f"site must not vendor installed skill roots: {present}"
+
+    vendored_skill_files = [
+        p.relative_to(ROOT).as_posix()
+        for p in site.rglob("SKILL.md")
+    ] if site.exists() else []
+    assert not vendored_skill_files, f"site must not vendor SKILL.md files: {vendored_skill_files}"
