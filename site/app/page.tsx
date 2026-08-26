@@ -187,8 +187,8 @@ export default function Home() {
         <div className="workflow-board shell">
           <div className="workflow-caption"><span>ROUTE / 01-08</span><span>INPUT -&gt; DECISION -&gt; SHIP</span></div>
           <div className="workflow-trigger"><code>/shipdesign</code><span>one command, routed by context</span></div>
-          <div className="workflow-rail" />
           <div className="workflow-list">
+            <div className="workflow-rail" />
             {workflow.map(([name, text, no], i) => {
               const [explanation, kind, routeLabel, routes] = workflowMeta[i] ?? ["", "", "", []];
               return (
