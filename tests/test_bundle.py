@@ -13,6 +13,7 @@ REQUIRED_OWNED = [
     "upstreams.json",
     "skills/shipdesign/SKILL.md",
     "skills/shipdesign/references/routing.md",
+    "skills/shipdesign/references/review-protocol.md",
     "skills/shipdesign/references/quality-gate.md",
     "skills/shipdesign/references/upstream-contract.md",
     "scripts/sync_upstreams.py",
@@ -103,6 +104,37 @@ def test_shipdesign_frontmatter_and_refs():
 def test_orchestrator_names_all_quality_layers():
     text = (ROOT / "skills/shipdesign/SKILL.md").read_text().lower()
     for token in ["evidence", "direction", "build", "motion", "review", "quality gate"]:
+        assert token in text
+
+
+def test_review_protocol_runs_before_quality_scoring():
+    text = (ROOT / "skills/shipdesign/SKILL.md").read_text().lower()
+    assert "references/review-protocol.md" in text
+    assert text.index("references/review-protocol.md") < text.index("references/quality-gate.md")
+
+
+def test_review_protocol_requires_global_and_viewport_inspection():
+    text = (ROOT / "skills/shipdesign/references/review-protocol.md").read_text().lower()
+    for token in ["full-page", "desktop", "tablet", "mobile", "global composition", "section repetition"]:
+        assert token in text
+
+
+def test_review_protocol_requires_findings_before_score_and_critic_posture():
+    text = (ROOT / "skills/shipdesign/references/review-protocol.md").read_text().lower()
+    assert "findings before score" in text
+    assert "critic" in text
+    assert "do not defend" in text
+
+
+def test_landing_review_guards_against_dogfood_failure_modes():
+    text = (ROOT / "skills/shipdesign/references/review-protocol.md").read_text().lower()
+    for token in ["three consecutive", "cta", "contrast", "secondary text", "signature", "comprehension", "reflow"]:
+        assert token in text
+
+
+def test_quality_gate_has_floors_render_cap_and_mandatory_findings():
+    text = (ROOT / "skills/shipdesign/references/quality-gate.md").read_text().lower()
+    for token in ["12/15", "13/15", "8/10", "85/100", "cannot pass", "findings ledger", "before scoring"]:
         assert token in text
 
 
