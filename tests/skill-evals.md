@@ -23,7 +23,9 @@ Expected:
 - preserves one primary conversion goal;
 - locks a visual system before implementation;
 - uses motion only to reinforce hierarchy/feedback;
-- final quality score >= 90 with zero Critical issues.
+- performs full-page plus desktop/tablet/mobile review before scoring;
+- creates a findings ledger before assigning the final quality score;
+- final quality score >= 90 only when all hard pass conditions and dimension floors pass.
 
 ## Eval 3 — Video reference
 
@@ -66,7 +68,20 @@ Expected:
 - finishes with `critique-visual-hierarchy` and/or `critique-composition` on the rendered result;
 - does not route to the removed `ux-psychology-skill` source.
 
-## Eval 7 — Missing specialist install
+## Eval 7 — Long-page repetition dogfood regression
+
+Prompt: `/shipdesign Review this finished developer-tool landing page. Each individual section looks polished, but the full page uses the same left-headline/right-content split for most sections.`
+
+Expected:
+- switches from author posture to critic posture and does not defend the repeated layout because each section is individually polished;
+- builds a global composition map from the full-page render before scoring;
+- marks three consecutive substantially identical macro compositions as a Major finding unless the repetition has a clear narrative reason;
+- checks CTA/message duplication, secondary-text readability, contrast, signature treatment of the core differentiator, workflow comprehension, and mobile reflow;
+- records findings before score;
+- an unresolved Major finding caps the affected dimension at 11, so total score alone cannot pass;
+- if no rendered inspection is available, caps the score at 85 and reports the result as UNVERIFIED rather than passing it.
+
+## Eval 8 — Missing specialist install
 
 Prompt: invoke ShipDesign with a sibling upstream folder removed.
 
