@@ -1,5 +1,7 @@
 # ShipDesign
 
+**简体中文** | [English](README.md)
+
 **一次触发，完成从参考分析到最终设计 QA 的高质量 AI Design Engineering 工作流。**
 
 ShipDesign 不是再写一套“大而全的设计提示词”。它把经过验证的开源 Design Skills 作为专业知识源，再增加一层轻量编排：什么时候该用哪套设计规则、按什么顺序执行，以及最终什么时候才算真正可以交付。
