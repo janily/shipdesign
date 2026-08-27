@@ -1,5 +1,7 @@
 # ShipDesign
 
+[简体中文](README.zh-CN.md) | **English**
+
 **One trigger for evidence-led, high-quality AI design engineering.**
 
 ShipDesign bundles proven open-source design skills and adds a small orchestration layer that decides which specialist rules to apply, in what order, and when the result is good enough to ship.
