@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-25T11:23:56.583573+00:00",
+  "generated_at": "2026-08-31T09:43:00.173062+00:00",
   "sources": [
     {
       "id": "tastemaker",
@@ -62,7 +62,7 @@
       "id": "meng-to",
       "repo": "MengTo/Skills",
       "requested_ref": "main",
-      "resolved_commit": "4c716b516b6b0143f3037631306b3730d2832344",
+      "resolved_commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
       "license": "MIT",
       "mappings": [
         {
@@ -83,7 +83,7 @@
       "id": "jakub-krehel",
       "repo": "jakubkrehel/skills",
       "requested_ref": "main",
-      "resolved_commit": "ca483852de23d48ab4f4ea71da37dad12bd70a95",
+      "resolved_commit": "267330e1adfc66a718fb65fa6918c1f06d0a689e",
       "license": "MIT",
       "mappings": [
         {
