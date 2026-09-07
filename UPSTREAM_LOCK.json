@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-08-31T09:43:00.173062+00:00",
+  "generated_at": "2026-09-07T08:16:41.307331+00:00",
   "sources": [
     {
       "id": "tastemaker",
       "repo": "codeswithroh/tastemaker",
       "requested_ref": "main",
-      "resolved_commit": "45313ce9f60971134704a17f7b1a64c30909c240",
+      "resolved_commit": "a8136a09cf3b3963db2938b9ef3116fdcd5fb740",
       "license": "MIT",
       "mappings": [
         {
@@ -120,7 +120,7 @@
       "id": "owl-designer-skills",
       "repo": "Owl-Listener/designer-skills",
       "requested_ref": "main",
-      "resolved_commit": "20e34c4a587e5eb09fcdf8351fa97b3ad761b31e",
+      "resolved_commit": "9a6930cf84a822eb458624bd11c61aac5bbdf224",
       "license": "MIT",
       "mappings": [
         {
