@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-14T08:53:19.287096+00:00",
+  "generated_at": "2026-09-21T08:54:58.515784+00:00",
   "sources": [
     {
       "id": "tastemaker",
@@ -45,7 +45,7 @@
       "id": "emil-kowalski",
       "repo": "emilkowalski/skills",
       "requested_ref": "main",
-      "resolved_commit": "d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7",
+      "resolved_commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
       "license": "MIT",
       "mappings": [
         {
@@ -62,7 +62,7 @@
       "id": "meng-to",
       "repo": "MengTo/Skills",
       "requested_ref": "main",
-      "resolved_commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+      "resolved_commit": "5f47e389dac337a1bca5cddf376419248b3010f6",
       "license": "MIT",
       "mappings": [
         {
