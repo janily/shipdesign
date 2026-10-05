@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-09-28T09:44:28.855320+00:00",
+  "generated_at": "2026-10-05T10:24:09.825206+00:00",
   "sources": [
     {
       "id": "tastemaker",
       "repo": "codeswithroh/tastemaker",
       "requested_ref": "main",
-      "resolved_commit": "6bada3c13b29124dcc8f5bc1bdad7b59727eabed",
+      "resolved_commit": "e39b4bf6586f303761dca996337e16a0354305b7",
       "license": "MIT",
       "mappings": [
         {
@@ -45,7 +45,7 @@
       "id": "emil-kowalski",
       "repo": "emilkowalski/skills",
       "requested_ref": "main",
-      "resolved_commit": "d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128",
+      "resolved_commit": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
       "license": "MIT",
       "mappings": [
         {
@@ -62,7 +62,7 @@
       "id": "meng-to",
       "repo": "MengTo/Skills",
       "requested_ref": "main",
-      "resolved_commit": "798db0a3ee4429ac8ed6bc5f4a59b6d45e7a914d",
+      "resolved_commit": "4b474f0ef5e008516b0cc912f3bf870eb77ae05e",
       "license": "MIT",
       "mappings": [
         {
