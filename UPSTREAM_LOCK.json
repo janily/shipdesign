@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-26T08:52:41.876930+00:00",
+  "generated_at": "2026-11-02T11:00:35.366251+00:00",
   "sources": [
     {
       "id": "tastemaker",
@@ -32,7 +32,7 @@
       "id": "elaya-landing-page",
       "repo": "elayadesign/ai-design-skills",
       "requested_ref": "main",
-      "resolved_commit": "a2735a3eaf092eaaffb6dc17df25de33ef3bd048",
+      "resolved_commit": "456d9e0d3e2d84c748bb143c6ca3d90c45e16213",
       "license": "MIT",
       "mappings": [
         {
@@ -45,7 +45,7 @@
       "id": "emil-kowalski",
       "repo": "emilkowalski/skills",
       "requested_ref": "main",
-      "resolved_commit": "2d228630ba1446365f614a108cb8252f1feda202",
+      "resolved_commit": "f1090bec277140d02ed202440185ad9d02ac1490",
       "license": "MIT",
       "mappings": [
         {
@@ -62,7 +62,7 @@
       "id": "meng-to",
       "repo": "MengTo/Skills",
       "requested_ref": "main",
-      "resolved_commit": "a45892d2fdadab75b31fb16abecc02f101b31c43",
+      "resolved_commit": "ef5f85130d083d33e08cb19f6ee23cdde2d406ab",
       "license": "MIT",
       "mappings": [
         {
@@ -83,7 +83,7 @@
       "id": "jakub-krehel",
       "repo": "jakubkrehel/skills",
       "requested_ref": "main",
-      "resolved_commit": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+      "resolved_commit": "60bf140e43c98b248e6594487384ec967e89d98a",
       "license": "MIT",
       "mappings": [
         {
