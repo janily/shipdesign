@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-02T11:00:35.366251+00:00",
+  "generated_at": "2026-11-09T11:28:25.851602+00:00",
   "sources": [
     {
       "id": "tastemaker",
@@ -19,7 +19,7 @@
       "id": "garden-web-design-engineer",
       "repo": "ConardLi/garden-skills",
       "requested_ref": "main",
-      "resolved_commit": "2b9a89340b70f632d31c0f1c69fce94a7912423e",
+      "resolved_commit": "08150e750bdc8c8dc452fb43c8ef5221b71c4308",
       "license": "MIT",
       "mappings": [
         {
@@ -45,7 +45,7 @@
       "id": "emil-kowalski",
       "repo": "emilkowalski/skills",
       "requested_ref": "main",
-      "resolved_commit": "f1090bec277140d02ed202440185ad9d02ac1490",
+      "resolved_commit": "5206a950b715e0cabe7043ea0b2304332b91494e",
       "license": "MIT",
       "mappings": [
         {
@@ -62,7 +62,7 @@
       "id": "meng-to",
       "repo": "MengTo/Skills",
       "requested_ref": "main",
-      "resolved_commit": "ef5f85130d083d33e08cb19f6ee23cdde2d406ab",
+      "resolved_commit": "d6324a05ca03ce5f6cdba519318d92176dbc43d2",
       "license": "MIT",
       "mappings": [
         {
@@ -83,7 +83,7 @@
       "id": "jakub-krehel",
       "repo": "jakubkrehel/skills",
       "requested_ref": "main",
-      "resolved_commit": "60bf140e43c98b248e6594487384ec967e89d98a",
+      "resolved_commit": "659cc4e5b6df90cfe1f306f5ae1c83fa549e075c",
       "license": "MIT",
       "mappings": [
         {
